@@ -1,7 +1,16 @@
 <template>
     <div>
         <ul>
-            <li>tood 1</li>
+            <TodoItem />
         </ul>
     </div>
 </template>
+
+<script>
+import TodoItem from './TodoItem'
+export default {
+    components: {
+        TodoItem
+    }
+}
+</script>
