@@ -1,6 +1,6 @@
 <template>
     <li>
-        <span>
+        <span v-bind:class="{done: todo.completed}">
             <input type="checkbox" />
             <strong>{{todo.id}}</strong>
             {{todo.title}}
