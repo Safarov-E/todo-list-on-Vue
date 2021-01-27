@@ -14,14 +14,14 @@
 import TodoItem from './TodoItem'
 export default {
     props: ['todos'],
+    methods: {
+        removeTodo(id) {
+            this.$emit('remove-todo', id)
+        }
+    },
     components: {
         TodoItem
     },
-    methods: {
-        removeTodo() {
-            
-        }
-    }
 }
 </script>
 <style scoped>
